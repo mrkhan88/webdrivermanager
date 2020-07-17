@@ -5,12 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RightClick {
 
-	public static void main(String[] args) throws InterruptedException {
+	//public static void main(String[] args) throws InterruptedException {
+	
+	@Test
+	
+	public void rightClick() throws InterruptedException {
+		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		
